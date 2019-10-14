@@ -16,7 +16,8 @@ class HomePage extends BasePage {
    }
 
    performSearch(searchTerm) {
-      return this.searchBox.click().then(function () {
+      let promise = this.searchBox.click();
+      promise.then(function () {
          return this.searchInput.sendKeys(searchTerm)
       });
 

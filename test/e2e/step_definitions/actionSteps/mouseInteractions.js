@@ -8,9 +8,8 @@ When(/^I click search button$/, function () {
     return homePage.clickSearch();
 });
 
-When(/^I perform search for "([^"]*)"$/, (searchTerm) => {
+When(/^I perform search for "([^"]*)"$/, function (searchTerm) {
     logger.info(`I perform search for ${searchTerm}`);
-    let result = homePage.performSearch(searchTerm);
-    return result;
+    return homePage.performSearch(searchTerm);
 });
 

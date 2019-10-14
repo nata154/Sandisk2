@@ -20,8 +20,8 @@ exports.config = {
     cucumberOpts: {
         require: [
             path.resolve('./test/e2e/step_definitions/**/*.js'),
-            'D:/JavaScript/Module10-original/Protractor+Cucumber/test/e2e/support/hooks.js'
-            //'D:/JavaScript/Module10-original/Protractor+Cucumber/test/e2e/support/world.js'
+            'D:/Sandisk2/test/e2e/support/hooks.js'
+            //D:/Sandisk2/test/e2e/support/world.js'
         ],
         ignoreUncaughtExceptions: true,
         format: 'json:./reports/report.json',

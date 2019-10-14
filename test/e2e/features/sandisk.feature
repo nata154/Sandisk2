@@ -7,7 +7,6 @@ Feature: Access to other sites
     Then Page title should be "SanDisk | Global Leader in Flash Memory Storage Solutions"
     When I perform search for "usb"
 
-    Then Page title should be "USB Flash Drives | SanDisk"
 
     Examples:
       | URL                      | USB Flash                               |
