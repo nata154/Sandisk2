@@ -4,6 +4,7 @@
   "description": "A simple proctractor and cucumber bdd test automation framework",
   "main": "index.js",
   "dependencies": {
+    "chromedriver": "^77.0.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cucumber": "^5.1.0",

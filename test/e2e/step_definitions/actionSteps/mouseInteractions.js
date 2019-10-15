@@ -1,15 +1,16 @@
 "use strict";
 const { When } = require('cucumber');
 const logger = require('../../config/loggerConfig.js').logger;
-const homePage = require('../../pageObject/homePage');
+const HomePage = require('../../pageObject/HomePage');
+const UsbFlashPage = require('../../pageObject/UsbFlashPage');
 
-When(/^I click search button$/, function () {
-    logger.info(`I click search button`);
-    return homePage.clickSearch();
+When(/^I click usb Flash tab$/, function () {
+    logger.info(`I click usb Flash tab`);
+    return HomePage.clickUSBFlaskTab();
 });
 
-When(/^I perform search for "([^"]*)"$/, function (searchTerm) {
+When(/^I perform search for "([^"]*)"$/, async function (searchTerm) {
     logger.info(`I perform search for ${searchTerm}`);
-    return homePage.performSearch(searchTerm);
+    return await HomePage.performSearch(searchTerm);
 });
 

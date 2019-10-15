@@ -1,4 +1,4 @@
-const Header = require('..//pageObject/common/headerMenu.js');
+const Header = require('./common/HeaderMenu.js');
 
 class BasePage {
 
@@ -7,19 +7,9 @@ class BasePage {
    }
 
    open() {
-      browser.get('http://www.sandisk.com');
-      return browser.wait(ec.elementToBeClickable(this.header.logo), GLOBAL_TIMEOUT);
+      return browser.get('http://www.sandisk.com');
    }
 
-   checkPageTitle(pageTitle) {
-      return this.getPageTitle().then((title) => {
-         return title === pageTitle;
-      });
-   }
-
-   getPageTitle() {
-      return browser.getTitle();
-   }
 };
 
 module.exports = BasePage;

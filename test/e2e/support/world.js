@@ -4,7 +4,7 @@ var { defineSupportCode } = require('cucumber');
 
 function CustomWorld() {
    this.driver = new seleniumWebdriver.Builder()
-      .forBrowser('chrome').build()
+      .forBrowser('chrome').build();
 }
 
 defineSupportCode(function ({ setWorldConstructor }) {

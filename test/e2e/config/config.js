@@ -21,7 +21,7 @@ exports.config = {
         require: [
             path.resolve('./test/e2e/step_definitions/**/*.js'),
             'D:/Sandisk2/test/e2e/support/hooks.js'
-            //D:/Sandisk2/test/e2e/support/world.js'
+            //'D:/Sandisk2/test/e2e/support/world.js'
         ],
         ignoreUncaughtExceptions: true,
         format: 'json:./reports/report.json',
