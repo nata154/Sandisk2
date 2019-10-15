@@ -10,3 +10,6 @@ node_modules
 tmp/
 usage.txt
 yarn-error.log
+
+*.log
+node_modules

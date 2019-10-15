@@ -1,7 +1,5 @@
 "use strict";
-const { After, Before, Status } = require('cucumber');
-const { setDefaultTimeout } = require('cucumber'); //import only this function
-setDefaultTimeout(60 * 1000);
+const { After, Status } = require('cucumber');
 
 After(function (testCase) {
     if (testCase.result.status === Status.FAILED) {
