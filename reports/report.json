@@ -13,14 +13,18 @@
     "uri": "test\\e2e\\features\\sandisk.feature",
     "elements": [
       {
-        "id": "access-to-other-sites;i-should-be-able-to-access-<>",
+        "id": "access-to-other-sites;filter-usb-wireless-flash",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "I should be able to access <>",
+        "line": 27,
+        "name": "Filter USB WireLess flash",
         "tags": [
           {
             "name": "@all",
             "line": 1
+          },
+          {
+            "name": "@USB-WireLess",
+            "line": 17
           }
         ],
         "type": "scenario",
@@ -28,79 +32,78 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 19,
             "name": "I open \"https://www.sandisk.com/\" url",
             "match": {
               "location": "test\\e2e\\step_definitions\\actionSteps\\browserInteractions.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 6878000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "Page title should be \"SanDisk | Global Leader in Flash Memory Storage Solutions\"",
-            "match": {
-              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 92000000
+              "duration": 7356000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
-            "name": "I click usb Flash tab",
+            "line": 20,
+            "name": "I filter by USB",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:7"
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 4143000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "Page title should be \"USB Flash Drives | SanDisk\"",
-            "match": {
-              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 96000000
+              "duration": 252000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
-            "name": "I perform search for \"usb\"",
+            "line": 21,
+            "name": "I filter by WireLess",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:12"
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I click first item",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:32"
             },
             "result": {
               "status": "failed",
-              "duration": 98000000,
-              "error_message": "TypeError: Cannot read property 'searchInput' of undefined\n    at D:\\Sandisk2\\test\\e2e\\pageObject\\HomePage.js:19:28\n    at elementArrayFinder_.then (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:804:32)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+              "duration": 5000000,
+              "error_message": "TypeError: Cannot read property 'then' of undefined\n    at ResultPage.clickFirstElementAfterSort (D:\\Sandisk2\\test\\e2e\\pageObject\\ResultPage.js:12:10)\n    at CustomWorld.<anonymous> (D:\\Sandisk2\\test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:34:23)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I check parameters of filtring",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:18"
+            },
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "test\\e2e\\support\\hooks.js:5"
+              "location": "test\\e2e\\support\\hooks.js:4"
             },
             "result": {
               "status": "failed",
-              "duration": 861000000,
-              "error_message": "TypeError: this.attach is not a function\n    at browser.takeScreenshot.then (D:\\Sandisk2\\test\\e2e\\support\\hooks.js:9:25)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+              "duration": 666000000,
+              "error_message": "TypeError: Cannot read property 'rbWireless' of undefined\n    at D:\\Sandisk2\\test\\e2e\\pageObject\\HomePage.js:37:25\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\Natallia_Karneyeva1\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
             }
           },
           {
@@ -111,7 +114,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           }
         ]

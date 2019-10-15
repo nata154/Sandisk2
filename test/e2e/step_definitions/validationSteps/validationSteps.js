@@ -14,3 +14,8 @@ Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
         return expect(pageTitle).to.be.equal(text);
     }
 });
+
+Then('I check parameters of filtring', function () {
+    console.log('I check parameters of filtring +++++++++++++++');
+    return 'pending';
+});

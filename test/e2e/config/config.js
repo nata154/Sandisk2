@@ -25,7 +25,7 @@ exports.config = {
         ],
         ignoreUncaughtExceptions: true,
         format: 'json:./reports/report.json',
-        tags: yargs.tag || '@all'
+        tags: yargs.tag || '@USB-WireLess'
     },
     onPrepare: () => {
         logger.info('Maximizing browser window');
