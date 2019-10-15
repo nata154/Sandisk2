@@ -4,12 +4,13 @@
   "description": "A simple proctractor and cucumber bdd test automation framework",
   "main": "index.js",
   "dependencies": {
-    "chromedriver": "^77.0.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
+    "chromedriver": "^77.0.0",
     "cucumber": "^5.1.0",
     "cucumber-html-reporter": "^5.0.2",
     "protractor": "^5.4.2",
+    "string-format": "^2.0.0",
     "winston": "^3.2.1",
     "yargs": "^14.0.0"
   },

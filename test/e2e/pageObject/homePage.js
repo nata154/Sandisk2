@@ -1,4 +1,5 @@
 const BasePage = require('./BasePage');
+const format = require('string-format')
 //const UsbFlashPage = require('../../pageObject/UsbFlashPage');
 
 class HomePage extends BasePage {
@@ -8,9 +9,9 @@ class HomePage extends BasePage {
       this.usbFlashTab = element(by.css('div#bs-example-navbar-collapse-1 a[href *= "usb-flash"]'));
       this.searchBox = element(by.css('form.search-container #search-box'));
       this.searchInput = element(by.css('form.search-container #search-box'));//cant find"
-      this.rbUsb = element(by.xpath('//input[@type="radio"]//following::span[contains(text(), "USB")]//preceding-sibling::input'));
-      this.rbrbWireless = element(by.xpath('//input[@type="radio"]//following::span[contains(text(), "Wireless")]//preceding-sibling::input'));
-
+      // this.rbUsb = element(by.xpath('//input[@type="radio"]//following::span[contains(text(), "USB")]//preceding-sibling::input'));
+      // this.rbrbWireless = element(by.xpath('//input[@type="radio"]//following::span[contains(text(), "Wireless")]//preceding-sibling::input'));
+      this.buttonTemplate = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//preceding-sibling::input'
    }
 
    clickUSBFlaskTab() {
@@ -28,7 +29,17 @@ class HomePage extends BasePage {
    }
 
    clickFilterByUsb() {
-      return this.rbUsb.click();
+      return element(by.xpath(format(this.buttonTemplate, "USB"))).click()
+      // return this.rbUsb.click();
+   }
+
+   async clickFilter(filterName) {
+      const filterLocator = element(by.xpath(format(this.buttonTemplate, filterName)))
+      return this.scroll(filterLocator)
+         .then(() => {
+            browser.sleep(5000);
+            return filterLocator.click();
+         })
    }
 
    clickFilterByWireless() {
@@ -42,7 +53,7 @@ class HomePage extends BasePage {
 
 
 
-   scroll(searchElement) {
+   async scroll(searchElement) {
       return browser.executeScript("arguments[0].scrollIntoView();", searchElement);
    }
 

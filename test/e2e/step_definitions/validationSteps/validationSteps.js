@@ -8,7 +8,7 @@ Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
     let pageTitle = await browser.getTitle();
     logger.info(`Page title should${notArg} be ${text}`);
     if (notArg) {
-        return expect(pageTitle).to.not.equal(text);
+        return expect(pageTitle).to.not.equal(text, `Title is not equal`);
     }
     else {
         return expect(pageTitle).to.be.equal(text);

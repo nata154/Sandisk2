@@ -7,13 +7,14 @@ class ResultPage extends BasePage {
       this.firstItemLearnMore = element(by.xpath('//a[@class="btn actionItem" and contains(text(), "Learn More")]'));
    }
 
-   clickFirstElementAfterSort() {
+   async clickFirstElementAfterSort() {
       console.log('it clickFirstElementAfterSort +++++++++++');
-      this.scroll(this.firstItemLearnMore)
+      return this.scroll(this.firstItemLearnMore)
          .then(function () {
-            this.firstItemLearnMore.click()
+            return this.firstItemLearnMore.click()
                .then(function () {
-                  return require('../pageObject/UsbFlashPage');
+                  return browser.sleep(4000);
+                  // return require('../pageObject/UsbFlashPage');
                });
          });
    }
@@ -21,6 +22,7 @@ class ResultPage extends BasePage {
    scroll(searchElement) {
       return browser.executeScript("arguments[0].scrollIntoView();", searchElement);
    }
+
 };
 
 module.exports = new ResultPage();

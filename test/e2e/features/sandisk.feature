@@ -14,11 +14,23 @@ Feature: Access to other sites
       | URL                      | USB Flash                               |
       | https://www.sandisk.com/ | element(by.css(a[href *= "usb-flash"])) |
 
-  @USB-WireLess
+
   Scenario Outline: Filter USB WireLess flash
     Given I open "<URL>" url
     When I filter by USB
     When I filter by WireLess
+    When I click first item
+    Then I check parameters of filtring
+
+    Examples:
+      | URL                      |
+      | https://www.sandisk.com/ |
+
+  @USB-WireLess
+  Scenario Outline: Filter USB WireLess flash
+    Given I open "<URL>" url
+    When I click filter "USB"
+    When I click filter "WireLess"
     When I click first item
     Then I check parameters of filtring
 
