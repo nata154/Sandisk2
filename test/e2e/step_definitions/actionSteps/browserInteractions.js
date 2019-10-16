@@ -1,10 +1,11 @@
 "use strict";
-let { When } = require('cucumber');
+
+let {Given} = require('cucumber');
 const logger = require('../../config/loggerConfig.js').logger;
 
-When(/^I open "([^"]*)" url$/, (url) => {
+Given(/^I open "([^"]*)" url$/, async (url) => {
     logger.info(`I open ${url} url`);
-    return browser.get(url);
+    await browser.get(url);
 });
 
 

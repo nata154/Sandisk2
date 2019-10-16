@@ -1,6 +1,6 @@
 const BasePage = require('./BasePage');
-const format = require('string-format')
-//const UsbFlashPage = require('../../pageObject/UsbFlashPage');
+const format = require('string-format');
+const Wrapper = require('../helper/Wrapper');
 
 class HomePage extends BasePage {
 
@@ -15,47 +15,38 @@ class HomePage extends BasePage {
    }
 
    clickUSBFlaskTab() {
-      return this.usbFlashTab.click();
-   }
-
-   performSearch(searchTerm) {
-      return this.searchBox.click()
-         .then(() => {
-            return sendKeys(searchTerm)
-         })
-         .then(function () {
-            return require('./ResultPage')
-         });
-   }
-
-   clickFilterByUsb() {
-      return element(by.xpath(format(this.buttonTemplate, "USB"))).click()
-      // return this.rbUsb.click();
+      return Wrapper.waitForElementClickableAndClick(this.usbFlashTab);
    }
 
    async clickFilter(filterName) {
-      const filterLocator = element(by.xpath(format(this.buttonTemplate, filterName)))
-      return this.scroll(filterLocator)
-         .then(() => {
-            browser.sleep(5000);
-            return filterLocator.click();
-         })
+      const filterLocator = element(by.xpath(format(this.buttonTemplate, filterName)));
+      //*[@class="section centered barand-nav" and @style="background-color: #"] click intercepted
+      return Wrapper.waitForElementClickableAndClick(filterLocator);
    }
 
-   clickFilterByWireless() {
-      this.scroll(this.rbrbWireless)
-         .then(function () {
-            return this.rbWireless.click();
-         }).then(function () {
-            return require('../pageObject/ResultPage')
-         });
-   }
+   // performSearch(searchTerm) {
+   //    return this.searchBox.click()
+   //        .then(() => {
+   //           return sendKeys(searchTerm)
+   //        })
+   //        .then(function () {
+   //           return require('./ResultPage')
+   //        });
+   // }
 
-
-
-   async scroll(searchElement) {
-      return browser.executeScript("arguments[0].scrollIntoView();", searchElement);
-   }
+   // clickFilterByUsb() {
+   //    return element(by.xpath(format(this.buttonTemplate, "USB"))).click()
+   //    // return this.rbUsb.click();
+   // }
+   //
+   // clickFilterByWireless() {
+   //    this.scroll(this.rbrbWireless)
+   //       .then(function () {
+   //          return this.rbWireless.click();
+   //       }).then(function () {
+   //          return require('../pageObject/ResultPage')
+   //       });
+   // }
 
    //performSearch(searchTerm) {
    // let promise = this.searchBox.click();

@@ -5,8 +5,6 @@ const yargs = require('yargs').argv;
 const logger = require('./loggerConfig.js').logger;
 
 exports.config = {
-    allScriptsTimeout: 200000,
-    getPageTimeout: 200000,
     specs: [path.resolve('./test/e2e/features/*.feature')],
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),

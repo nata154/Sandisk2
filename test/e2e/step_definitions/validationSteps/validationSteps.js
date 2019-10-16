@@ -1,4 +1,5 @@
 "use strict";
+
 let { Then } = require('cucumber');
 const expect = require('chai').expect;
 const logger = require('../../config/loggerConfig.js').logger;
@@ -15,7 +16,7 @@ Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
     }
 });
 
-Then('I check parameters of filtring', function () {
+Then('I check parameters of filtering', function () {
     console.log('I check parameters of filtring +++++++++++++++');
     return 'pending';
 });
