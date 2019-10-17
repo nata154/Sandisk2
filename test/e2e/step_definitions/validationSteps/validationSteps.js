@@ -4,6 +4,7 @@ let { Then } = require('cucumber');
 const expect = require('chai').expect;
 const logger = require('../../config/loggerConfig.js').logger;
 const UsbFlashPage = require('../../pageObject/UsbFlashPage');
+const SSDPage = require('../../pageObject/SSDPage');
 
 Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
     notArg = notArg ? ' not' : '';
@@ -18,7 +19,14 @@ Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
 });
 
 
-Then('I check device name {string}', async (text) => {
+Then('I check USBdevice name {string}', async (text) => {
     const nameOfDevice = await UsbFlashPage.getNameOfDevice();
     expect(nameOfDevice).to.be.equal(text.toUpperCase(), 'Device name is not equals');
 });
+
+Then('I check SSDdevice name {string}', async (text) => {
+    const nameOfDevice = await SSDPage.getNameOfDevice();
+    expect(nameOfDevice).to.be.equal(text.toUpperCase(), 'Device name is not equals');
+});
+
+

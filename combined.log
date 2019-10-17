@@ -1099,3 +1099,179 @@
 {"message":"Maximizing browser window","level":"info"}
 {"message":"I open https://www.sandisk.com/ url","level":"info"}
 {"level":"info","message":"I click ${tabName} tab"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click 2 item learn more","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click 2 item learn more","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click 2 item learn more","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click 2 item learn more","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click 2 item learn more","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click 2 item learn more","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at SSDPage"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at SSDPage"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at SSDPage"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at SSDPage"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at SSDPage"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at SSDPage"}
+{"level":"info","message":"I set region ${region}"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at SSDPage"}
+{"level":"info","message":"I set region ${region}"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"level":"info","message":"I click filter "}
+{"level":"info","message":"I click filter "}
+{"message":"I click first element","level":"info"}

@@ -20,7 +20,7 @@ Feature: Playing
     When I click filter "USB"
     When I click filter "Windows"
     When I click first item
-    Then I check device name "<nameOfDevice>"
+    Then I check USBdevice name "<nameOfDevice>"
 
     Examples:
       | URL                      | nameOfDevice                                        |
@@ -29,8 +29,18 @@ Feature: Playing
   @SSD-portable-highPerform-whereToBy-InEuropeBelarus
   Scenario Outline: Filter SSD portable highPerformance - second item - where to by - region Belarus - amount of Items
     Given I open "<URL>" url
-    When I click "SSD" tab
+    When I click "SSD" tab at homePage
+    When I click filter "Portable SSD"
+    When I click filter "High Performance"
+    When I click first item
+    Then I check SSDdevice name "<nameOfDevice>"
+    When I click "Where To Buy" tab at SSDPage
+    When I set region "Europe / Middle East"
+    When I set area "Belarus"
+    Then Amount of distributors should be not null
+
+
 
     Examples:
-      | URL                      |
-      | https://www.sandisk.com/ |
+      | URL                      | nameOfDevice                     |
+      | https://www.sandisk.com/ | SanDisk Extreme 900 Portable SSD |

@@ -3,7 +3,7 @@ const Wrapper = require('../helper/Wrapper');
 class Scroller {
 
     async scroll(searchElement) {
-        await browser.executeScript("arguments[0].scrollIntoView();", searchElement);
+        await browser.executeScript("arguments[0].scrollIntoView(false);", searchElement);
     }
 
     // async scroll2(searchElement1, searchElement2) {

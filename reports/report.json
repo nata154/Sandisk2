@@ -15,7 +15,7 @@
       {
         "id": "playing;filter-ssd-portable-highperformance---second-item---where-to-by---region-belarus---amount-of-items",
         "keyword": "Scenario",
-        "line": 36,
+        "line": 46,
         "name": "Filter SSD portable highPerformance - second item - where to by - region Belarus - amount of Items",
         "tags": [
           {
@@ -39,20 +39,114 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8223000000
+              "duration": 8252000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 32,
-            "name": "I click \"SSD\" tab",
+            "name": "I click \"SSD\" tab at homePage",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:29"
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 5695000000
+              "duration": 7122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I click filter \"Portable SSD\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5203000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I click filter \"High Performance\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5238000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I click first item",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:25"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 138000000,
+              "error_message": "Error: StaleElementReferenceError: stale element reference: element is not attached to the page document\n  (Session info: chrome=77.0.3865.120)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'EPBYMINW6904', ip: '10.6.207.196', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: driver.version: unknown\n    at Wrapper.waitForElementClickableAndClick (D:\\Sandisk2\\test\\e2e\\helper\\Wrapper.js:31:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "I check SSDdevice name \"SanDisk Extreme 900 Portable SSD\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I click \"Where To Buy\" tab at SSDPage",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:35"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I set region \"Europe / Middle East\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:40"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I set area \"Belarus\"",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "Amount of distributors should be not null",
+            "result": {
+              "status": "undefined"
             }
           },
           {
@@ -62,7 +156,8 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]

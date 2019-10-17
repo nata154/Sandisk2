@@ -4,6 +4,7 @@ const {When} = require('cucumber');
 const logger = require('../../config/loggerConfig.js').logger;
 const HomePage = require('../../pageObject/HomePage');
 const ResultPage = require('../../pageObject/ResultPage');
+const SSDPage = require('../../pageObject/SSDPage');
 
 
 When('I click usb Flash tab', async () => {
@@ -26,10 +27,26 @@ When('I click first item', async () => {
     await ResultPage.clickFirstItem();
 });
 
-When('I click {string} tab', async (tabName) => {
-    logger.info('I click ${tabName} tab', tabName)
+When('I click {string} tab at homePage', async (tabName) => {
+    logger.info('I click ${tabName} tab  at homePage', tabName)
     await HomePage.clickTab(tabName);
 });
+
+When('I click {string} tab at SSDPage', async (tabName) => {
+    logger.info('I click ${tabName} tab  at SSDPage', tabName)
+    await SSDPage.clickTab(tabName);
+});
+
+When('I set region {string}', async (region) => {//To Do
+    logger.info('I set region ${region}', region)
+    await SSDPage.clickRegion(region);
+});
+
+
+// When('I click {int} item learn more', async (numberOfItem) => {
+//     logger.info(`I click ${numberOfItem} item learn more`);
+//     await ResultPage.clickDefiniteItem(numberOfItem);
+// });
 
 // When(/^I filter by USB$/, function () {
 //     logger.info(`I filter by USB`);

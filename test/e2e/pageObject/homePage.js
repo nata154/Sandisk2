@@ -13,6 +13,8 @@ class HomePage extends BasePage {
       this.radioButtonTemplate = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//preceding-sibling::input';
       this.radioButtonTemplateH4 = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//..//..//../h4';
       this.tabTemplate = '//div[@id="bs-example-navbar-collapse-1"]//a[contains(text(), "{0}")]';
+
+      //div[@id="bs-example-navbar-collapse-1"]//a[contains(text(), "Where To Buy")]
    }
 
    clickUSBFlaskTab() {
@@ -22,8 +24,9 @@ class HomePage extends BasePage {
    async clickFilter(filterName) {
       browser.sleep(2000);
       const filterLocator = element(by.xpath(format(this.radioButtonTemplate, filterName)));
-      const filterLocatorH4 = element(by.xpath(format(this.radioButtonTemplateH4, filterName)));
-      await Scroller.scroll(filterLocatorH4);
+     // const filterLocatorH4 = element(by.xpath(format(this.radioButtonTemplateH4, filterName)));
+      await Scroller.scroll(filterLocator);
+      browser.sleep(3000);
       await Wrapper.waitForElementVisible(filterLocator)
           .then(async () => {
              await filterLocator.click();
