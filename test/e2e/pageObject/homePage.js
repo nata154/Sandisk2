@@ -1,6 +1,7 @@
 const BasePage = require('./BasePage');
 const format = require('string-format');
 const Wrapper = require('../helper/Wrapper');
+const Scroller = require('../helper/Scroller');
 
 class HomePage extends BasePage {
 
@@ -9,9 +10,9 @@ class HomePage extends BasePage {
       this.usbFlashTab = element(by.css('div#bs-example-navbar-collapse-1 a[href *= "usb-flash"]'));
       this.searchBox = element(by.css('form.search-container #search-box'));
       this.searchInput = element(by.css('form.search-container #search-box'));//cant find"
-      // this.rbUsb = element(by.xpath('//input[@type="radio"]//following::span[contains(text(), "USB")]//preceding-sibling::input'));
-      // this.rbrbWireless = element(by.xpath('//input[@type="radio"]//following::span[contains(text(), "Wireless")]//preceding-sibling::input'));
-      this.buttonTemplate = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//preceding-sibling::input'
+      this.radioButtonTemplate = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//preceding-sibling::input';
+      this.radioButtonTemplateH4 = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//..//..//../h4';
+      this.tabTemplate = '//div[@id="bs-example-navbar-collapse-1"]//a[contains(text(), "{0}")]';
    }
 
    clickUSBFlaskTab() {
@@ -19,10 +20,43 @@ class HomePage extends BasePage {
    }
 
    async clickFilter(filterName) {
-      const filterLocator = element(by.xpath(format(this.buttonTemplate, filterName)));
-      //*[@class="section centered barand-nav" and @style="background-color: #"] click intercepted
-      return Wrapper.waitForElementClickableAndClick(filterLocator);
+      browser.sleep(2000);
+      const filterLocator = element(by.xpath(format(this.radioButtonTemplate, filterName)));
+      const filterLocatorH4 = element(by.xpath(format(this.radioButtonTemplateH4, filterName)));
+      await Scroller.scroll(filterLocatorH4);
+      await Wrapper.waitForElementVisible(filterLocator)
+          .then(async () => {
+             await filterLocator.click();
+          });
    }
+
+   async clickTab(tabName) {
+      browser.sleep(2000);
+      const tabLocator = element(by.xpath(format(this.tabTemplate, tabName)));
+      //const filterLocatorH4 = element(by.xpath(format(this.tabTemplate, tabName)));
+      await Scroller.scroll(tabLocator);
+      await Wrapper.waitForElementVisible(tabLocator)
+          .then(async () => {
+             await tabLocator.click();
+          });
+   }
+
+   // async clickFilter(filterName) {
+   //    console.log("function clickFilter");
+   //    const filterLocator = element(by.xpath(format(this.buttonTemplate, filterName)));
+   //    await this.scroll(this.buttonTemplate)
+   //        .then(async () => {
+   //           await Wrapper.waitForElementClickable(filterLocator)
+   //               .then(async () => {
+   //                  console.log("click" + filterLocator);
+   //                  await filterLocator.click();
+   //               });
+   //        })
+   // }
+
+   // async scroll(searchElement) {
+   //    await browser.executeScript("arguments[0].scrollIntoView();", searchElement);
+   // }
 
    // performSearch(searchTerm) {
    //    return this.searchBox.click()

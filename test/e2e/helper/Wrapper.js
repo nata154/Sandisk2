@@ -23,8 +23,20 @@ class Wrapper {
         try {
             await browser.driver.wait(EC.elementToBeClickable(element), timeOut, `Element with selector type '${element.elementArrayFinder_.locator().using}' and selector '${element.elementArrayFinder_.locator().value}' is invisible`)
                 .then(async () => {
-                    return element.click();
+                    console.log("click" + element);
+                    await element.click();
                 });
+        } catch (e) {
+            if (isThrowError) {
+                throw new Error(e);
+            }
+        }
+    }
+
+    async waitForElementClickable(element, timeOut = defaultTimeout, isThrowError = true) {
+        try {
+            console.log("waitForElementClickable" + element);
+            await browser.driver.wait(EC.elementToBeClickable(element), timeOut, `Element with selector type '${element.elementArrayFinder_.locator().using}' and selector '${element.elementArrayFinder_.locator().value}' is invisible`);
         } catch (e) {
             if (isThrowError) {
                 throw new Error(e);

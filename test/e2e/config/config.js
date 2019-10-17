@@ -23,7 +23,7 @@ exports.config = {
         ],
         ignoreUncaughtExceptions: true,
         format: 'json:./reports/report.json',
-        tags: yargs.tag || '@USB-WireLess'
+        tags: yargs.tag || '@SSD-portable-highPerform-whereToBy-InEuropeBelarus'
     },
     onPrepare: () => {
         logger.info('Maximizing browser window');

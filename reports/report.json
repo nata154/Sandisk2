@@ -13,18 +13,18 @@
     "uri": "test\\e2e\\features\\sandisk.feature",
     "elements": [
       {
-        "id": "playing;filter-usb-wireless-flash",
+        "id": "playing;filter-ssd-portable-highperformance---second-item---where-to-by---region-belarus---amount-of-items",
         "keyword": "Scenario",
-        "line": 27,
-        "name": "Filter USB WireLess flash",
+        "line": 36,
+        "name": "Filter SSD portable highPerformance - second item - where to by - region Belarus - amount of Items",
         "tags": [
           {
             "name": "@all",
             "line": 1
           },
           {
-            "name": "@USB-WireLess",
-            "line": 17
+            "name": "@SSD-portable-highPerform-whereToBy-InEuropeBelarus",
+            "line": 29
           }
         ],
         "type": "scenario",
@@ -32,65 +32,27 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 19,
+            "line": 31,
             "name": "I open \"https://www.sandisk.com/\" url",
             "match": {
               "location": "test\\e2e\\step_definitions\\actionSteps\\browserInteractions.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 7454000000
+              "duration": 8223000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 20,
-            "name": "I click filter \"USB\"",
+            "line": 32,
+            "name": "I click \"SSD\" tab",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:19"
+              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:29"
             },
             "result": {
               "status": "passed",
-              "duration": 395000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 21,
-            "name": "I click filter \"WireLess\"",
-            "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:19"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 10006000000,
-              "error_message": "Error: TimeoutError: Element with selector type 'xpath' and selector '//input[@type=\"radio\"]//following::span[contains(text(), \"WireLess\")]//preceding-sibling::input' is invisible\nWait timed out after 10002ms\n    at Wrapper.waitForElementClickableAndClick (D:\\Sandisk2\\test\\e2e\\helper\\Wrapper.js:30:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "I click first item",
-            "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:24"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "I check parameters of filtering",
-            "match": {
-              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:19"
-            },
-            "result": {
-              "status": "skipped"
+              "duration": 5695000000
             }
           },
           {
@@ -100,8 +62,7 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]

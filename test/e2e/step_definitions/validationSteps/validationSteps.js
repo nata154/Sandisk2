@@ -3,6 +3,7 @@
 let { Then } = require('cucumber');
 const expect = require('chai').expect;
 const logger = require('../../config/loggerConfig.js').logger;
+const UsbFlashPage = require('../../pageObject/UsbFlashPage');
 
 Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
     notArg = notArg ? ' not' : '';
@@ -16,7 +17,8 @@ Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
     }
 });
 
-Then('I check parameters of filtering', function () {
-    console.log('I check parameters of filtring +++++++++++++++');
-    return 'pending';
+
+Then('I check device name {string}', async (text) => {
+    const nameOfDevice = await UsbFlashPage.getNameOfDevice();
+    expect(nameOfDevice).to.be.equal(text.toUpperCase(), 'Device name is not equals');
 });
