@@ -21,7 +21,8 @@
   "scripts": {
     "webdriver-update": "webdriver-manager update",
     "webdriver-start": "webdriver-manager start",
-    "e2e": "protractor ./test/e2e/config/config.js"
+    "test": "cd node_modules/protractor/bin && protractor config.js",
+    "cmd": "node node_modules/protractor/bin/protractor config.js"
   },
   "author": "",
   "license": "ISC"

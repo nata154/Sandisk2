@@ -10,7 +10,7 @@
         "line": 1
       }
     ],
-    "uri": "test\\e2e\\features\\sandisk.feature",
+    "uri": "features\\sandisk.feature",
     "elements": [
       {
         "id": "playing;filter-ssd-portable-highperformance---second-item---where-to-by---region-belarus---amount-of-items",
@@ -35,11 +35,11 @@
             "line": 31,
             "name": "I open \"https://www.sandisk.com/\" url",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\browserInteractions.js:6"
+              "location": "step_definitions\\actionSteps\\browserInteractions.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 8252000000
+              "duration": 6722000000
             }
           },
           {
@@ -48,11 +48,11 @@
             "line": 32,
             "name": "I click \"SSD\" tab at homePage",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:30"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 7122000000
+              "duration": 4348000000
             }
           },
           {
@@ -61,11 +61,11 @@
             "line": 33,
             "name": "I click filter \"Portable SSD\"",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:20"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 5203000000
+              "duration": 5200000000
             }
           },
           {
@@ -74,11 +74,11 @@
             "line": 34,
             "name": "I click filter \"High Performance\"",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:20"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 5238000000
+              "duration": 5215000000
             }
           },
           {
@@ -87,12 +87,11 @@
             "line": 35,
             "name": "I click first item",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:25"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:25"
             },
             "result": {
-              "status": "failed",
-              "duration": 138000000,
-              "error_message": "Error: StaleElementReferenceError: stale element reference: element is not attached to the page document\n  (Session info: chrome=77.0.3865.120)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'EPBYMINW6904', ip: '10.6.207.196', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: driver.version: unknown\n    at Wrapper.waitForElementClickableAndClick (D:\\Sandisk2\\test\\e2e\\helper\\Wrapper.js:31:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+              "status": "passed",
+              "duration": 3303000000
             }
           },
           {
@@ -101,10 +100,11 @@
             "line": 36,
             "name": "I check SSDdevice name \"SanDisk Extreme 900 Portable SSD\"",
             "match": {
-              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:27"
+              "location": "step_definitions\\validationSteps\\validationSteps.js:26"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 184000000
             }
           },
           {
@@ -113,10 +113,11 @@
             "line": 37,
             "name": "I click \"Where To Buy\" tab at SSDPage",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:35"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:35"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2181000000
             }
           },
           {
@@ -125,10 +126,12 @@
             "line": 38,
             "name": "I set region \"Europe / Middle East\"",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:40"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:40"
             },
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 3000000,
+              "error_message": "TypeError: this.regionTemplate.click is not a function\n    at SSDPage.clickRegion (D:\\Sandisk2\\test\\pageObject\\SSDPage.js:32:35)\n    at CustomWorld.When (D:\\Sandisk2\\test\\step_definitions\\actionSteps\\mouseInteractions.js:42:19)"
             }
           },
           {

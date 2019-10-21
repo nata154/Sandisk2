@@ -5,7 +5,7 @@ const yargs = require('yargs').argv;
 const logger = require('./loggerConfig.js').logger;
 
 exports.config = {
-    specs: [path.resolve('./test/e2e/features/*.feature')],
+    specs: [path.resolve('./features/*.feature')],
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     ignoreUncaughtExceptions: true,
@@ -17,9 +17,9 @@ exports.config = {
     disableChecks: true,
     cucumberOpts: {
         require: [
-            path.resolve('./test/e2e/step_definitions/**/*.js'),
-            'D:/Sandisk2/test/e2e/support/hooks.js',
-            'D:/Sandisk2/test/e2e/support/world.js'
+            path.resolve('./step_definitions/**/*.js'),
+            './support/hooks.js',
+            './support/world.js'
         ],
         ignoreUncaughtExceptions: true,
         format: 'json:./reports/report.json',

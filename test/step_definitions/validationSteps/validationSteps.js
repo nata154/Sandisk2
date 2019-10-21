@@ -2,7 +2,7 @@
 
 let { Then } = require('cucumber');
 const expect = require('chai').expect;
-const logger = require('../../config/loggerConfig.js').logger;
+const logger = require('./../../loggerConfig.js').logger;
 const UsbFlashPage = require('../../pageObject/UsbFlashPage');
 const SSDPage = require('../../pageObject/SSDPage');
 
@@ -17,7 +17,6 @@ Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
         return expect(pageTitle).to.be.equal(text);
     }
 });
-
 
 Then('I check USBdevice name {string}', async (text) => {
     const nameOfDevice = await UsbFlashPage.getNameOfDevice();

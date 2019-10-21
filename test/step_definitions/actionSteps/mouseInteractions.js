@@ -1,7 +1,7 @@
 "use strict";
 
 const {When} = require('cucumber');
-const logger = require('../../config/loggerConfig.js').logger;
+const logger = require('./../../loggerConfig.js').logger;
 const HomePage = require('../../pageObject/HomePage');
 const ResultPage = require('../../pageObject/ResultPage');
 const SSDPage = require('../../pageObject/SSDPage');
