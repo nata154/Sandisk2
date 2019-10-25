@@ -20,7 +20,7 @@ describe('Sandisk home page', function () {
             })
     })
 
-    it('should check title through true', function () {
+    fit('should check title through true', function () {
         let origTitle = 'SanDisk | Global Leader in Flash Memory Storage Solutions';
         return expect(HomePage.checkPageTitle(origTitle)).toEqual(true);
     });
