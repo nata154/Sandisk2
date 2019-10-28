@@ -5,6 +5,7 @@ const yargs = require('yargs').argv;
 const logger = require('./loggerConfig.js').logger;
 
 exports.config = {
+    seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: [path.resolve('./features/*.feature')],
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
@@ -19,7 +20,7 @@ exports.config = {
         require: [
             path.resolve('./step_definitions/**/*.js'),
             './support/hooks.js',
-            './support/world.js'
+            './../support/world.js'
         ],
         ignoreUncaughtExceptions: true,
         format: 'json:./reports/report.json',

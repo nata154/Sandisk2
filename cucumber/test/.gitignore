@@ -1,4 +1,4 @@
-/.idea
-/combined.log
-/error.log
+./../../.idea
+./combined.log
+./error.log
 node_modules

@@ -3,10 +3,9 @@
 let {Given} = require('cucumber');
 const logger = require('./../../loggerConfig.js').logger;
 
-Given('I open {string} url', async (url) => {
+Given('I open {string} url', function (url) {
+    let world = this;
     logger.info(`I open ${url} url`);
-    await browser.get(url);
+    world.c = 4444444444444;
+    return browser.get(url);
 });
-
-
-

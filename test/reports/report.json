@@ -35,11 +35,11 @@
             "line": 31,
             "name": "I open \"https://www.sandisk.com/\" url",
             "match": {
-              "location": "step_definitions\\actionSteps\\browserInteractions.js:6"
+              "location": "step_definitions\\actionSteps\\browserInteractions.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 8370000000
+              "duration": 8634000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6451000000
+              "duration": 5000000
             }
           },
           {
@@ -64,8 +64,9 @@
               "location": "step_definitions\\actionSteps\\mouseInteractions.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 5229000000
+              "status": "failed",
+              "duration": 47000000,
+              "error_message": "NoSuchElementError: No element found using locator: By(xpath, //input[@type=\"radio\"]//following::span[contains(text(), \"Portable SSD\")]//preceding-sibling::input)\n    at elementArrayFinder.getWebElements.then (D:\\Sandisk2\\test\\node_modules\\protractor\\built\\element.js:814:27)\n    at ManagedPromise.invokeCallback_ (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: WebDriver.executeScript()\n    at thenableWebDriverProxy.schedule (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at thenableWebDriverProxy.executeScript (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\webdriver.js:878:16)\n    at run (D:\\Sandisk2\\test\\node_modules\\protractor\\built\\browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as executeScript] (D:\\Sandisk2\\test\\node_modules\\protractor\\built\\browser.js:67:16)\n    at Scroller.scroll (D:\\Sandisk2\\test\\helper\\Scroller.js:6:23)\n    at HomePage.clickFilter (D:\\Sandisk2\\test\\pageObject\\HomePage.js:27:22)\n    at World.When (D:\\Sandisk2\\test\\step_definitions\\actionSteps\\mouseInteractions.js:22:20)"
             }
           },
           {
@@ -77,8 +78,7 @@
               "location": "step_definitions\\actionSteps\\mouseInteractions.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 5233000000
+              "status": "skipped"
             }
           },
           {
@@ -90,8 +90,7 @@
               "location": "step_definitions\\actionSteps\\mouseInteractions.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 5353000000
+              "status": "skipped"
             }
           },
           {
@@ -103,8 +102,7 @@
               "location": "step_definitions\\validationSteps\\validationSteps.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 35000000
+              "status": "skipped"
             }
           },
           {
@@ -113,11 +111,10 @@
             "line": 37,
             "name": "I click \"Where To Buy\" tab at SSDPage",
             "match": {
-              "location": "step_definitions\\actionSteps\\mouseInteractions.js:35"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 2180000000
+              "status": "skipped"
             }
           },
           {
@@ -126,12 +123,10 @@
             "line": 38,
             "name": "I set region \"Europe / Middle East\"",
             "match": {
-              "location": "step_definitions\\actionSteps\\mouseInteractions.js:40"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:45"
             },
             "result": {
-              "status": "failed",
-              "duration": 2000000,
-              "error_message": "TypeError: this.regionTemplate.click is not a function\n    at SSDPage.clickRegion (D:\\Sandisk2\\test\\pageObject\\SSDPage.js:32:35)\n    at CustomWorld.When (D:\\Sandisk2\\test\\step_definitions\\actionSteps\\mouseInteractions.js:42:19)"
+              "status": "skipped"
             }
           },
           {
@@ -156,11 +151,22 @@
             "keyword": "After",
             "hidden": true,
             "match": {
+              "location": "support\\hooks.js:4"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 872000000,
+              "error_message": "TypeError: this.attach is not a function\n    at browser.takeScreenshot.then (D:\\Sandisk2\\test\\support\\hooks.js:8:25)\n    at ManagedPromise.invokeCallback_ (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at D:\\Sandisk2\\test\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]

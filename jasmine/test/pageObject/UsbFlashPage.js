@@ -4,11 +4,11 @@ class USBFlashPage extends BasePage {
 
    constructor() {
       super();
-      this.nameOfDevice = element(by.css('div.pageproperties h1'));
+      this.nameOfDevice = element(by.css('h1.inline'));
    }
 
    async getNameOfDevice() {
-      //await this.nameOfDevice.getText();   expected undefined to equal 'SANDISK EXTREME PRO USB 3.1 SOLID STATE FLASH DRIVE'
+      browser.sleep(5000);
       return this.nameOfDevice.getText();
    }
 }

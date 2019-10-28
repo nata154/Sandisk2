@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8cb35191-d123-48c5-bef2-38cac04e9dbb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../jasmine/test/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/combined.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jasmine/test/pageObject/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/pageObject/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jasmine/test/pageObject/ResultPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/pageObject/ResultPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jasmine/test/pageObject/SSDPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/pageObject/SSDPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jasmine/test/pageObject/UsbFlashPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/pageObject/UsbFlashPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jasmine/test/spec/spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/spec/spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObject/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObject/ResultPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/ResultPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObject/SSDPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/pageObject/SSDPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step_definitions/actionSteps/browserInteractions.js" beforeDir="false" afterPath="$PROJECT_DIR$/step_definitions/actionSteps/browserInteractions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step_definitions/actionSteps/mouseInteractions.js" beforeDir="false" afterPath="$PROJECT_DIR$/step_definitions/actionSteps/mouseInteractions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/hooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/support/hooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/world.js" beforeDir="false" afterPath="$PROJECT_DIR$/support/world.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Sh85aGNx1NArf0lrcT5Id8wIHP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cb35191-d123-48c5-bef2-38cac04e9dbb" name="Default Changelist" comment="" />
+      <created>1572004284060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572004284060</updated>
+      <workItem from="1572004285385" duration="7866000" />
+      <workItem from="1572243273626" duration="5876000" />
+      <workItem from="1572264735394" duration="503000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

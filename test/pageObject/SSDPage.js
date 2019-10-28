@@ -13,9 +13,7 @@ class SSDPage extends BasePage{
     }
 
     async clickTab(tabName) {
-        browser.sleep(2000);
         const tabLocator = element(by.xpath(format(this.tabTemplate, tabName)));
-        //const filterLocatorH4 = element(by.xpath(format(this.tabTemplate, tabName)));
         await Scroller.scroll(tabLocator);
         await Wrapper.waitForElementVisible(tabLocator)
             .then(async () => {
