@@ -1,6 +1,6 @@
 const BasePage = require('./BasePage');
 
-class USBFlashPage extends BasePage {
+class UsbFlashPage extends BasePage {
 
    constructor() {
       super();
@@ -13,4 +13,4 @@ class USBFlashPage extends BasePage {
    }
 }
 
-module.exports = new USBFlashPage();
+module.exports = UsbFlashPage;

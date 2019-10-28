@@ -16,4 +16,4 @@ class ResultPage extends BasePage {
 
 };
 
-module.exports = new ResultPage();
+module.exports = ResultPage;

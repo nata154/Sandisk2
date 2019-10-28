@@ -47,28 +47,6 @@ class HomePage extends BasePage {
           });
    }
 
-   // async clickTab(tabName) {
-   //    browser.sleep(1000);
-   //    const tabLocator = element(by.xpath(format(this.tabTemplate, tabName)));
-   //    //const filterLocatorH4 = element(by.xpath(format(this.tabTemplate, tabName)));
-   //    await Scroller.scroll(tabLocator);
-   //    await Wrapper.waitForElementVisible(tabLocator)
-   //        .then(async () => {
-   //           await tabLocator.click();
-   //        });
-   // }
-
-   // async clickFilter(filterName) {
-   //    browser.sleep(1000);
-   //    const filterLocator = element(by.xpath(format(this.radioButtonTemplate, filterName)));
-   //    // const filterLocatorH4 = element(by.xpath(format(this.radioButtonTemplateH4, filterName)));
-   //    await Scroller.scroll(filterLocator);
-   //    browser.sleep(1000);
-   //    await Wrapper.waitForElementVisible(filterLocator)
-   //        .then(async () => {
-   //           await filterLocator.click();
-   //        });
-   // }
 };
 
-module.exports = new HomePage();
+module.exports = HomePage;
