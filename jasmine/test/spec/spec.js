@@ -22,40 +22,82 @@ describe('Sandisk home page', function () {
         browser.quit();
     });
 
-    xit('should open main Sandisk page and check title', () => {
-        browser.sleep(1000);
-        let origTitle = 'SanDisk | Global Leader in Flash Memory Storage Solutions??';
-        return homePage.getPageTitle()
-            .then(title => {
-                return expect(title).toEqual( origTitle);
-            })
-    })
+    // xit('should open main Sandisk page and check title', () => {
+    //     browser.sleep(1000);
+    //     let origTitle = 'SanDisk | Global Leader in Flash Memory Storage Solutions??';
+    //     return homePage.getPageTitle()
+    //         .then(title => {
+    //             return expect(title).toEqual( origTitle);
+    //         })
+    // })
+    //
+    // xit('should check title through true', function () {
+    //     let origTitle = 'SanDisk | Global Leader in Flash Memory Storage Solutions';
+    //     return expect(homePage.checkPageTitle(origTitle)).toEqual(true);
+    // });
 
-    xit('should check title through true', function () {
-        let origTitle = 'SanDisk | Global Leader in Flash Memory Storage Solutions';
-        return expect(homePage.checkPageTitle(origTitle)).toEqual(true);
+    describe("Should open latest products", function () {
+
+        it('I hover over shop', function () {
+    return homePage.moveToItem();
+        });
+
+        it('I click to latest products', function () {
+    return homePage.clickLatestProducts();
+        });
+
+        it('I check that latest products page is opened', function () {
+            let expectedTitle = "Latest Products";
+        return homePage.getPageTitle()
+             .then((title) => {
+                 console.log(title);
+                 return expect(title).toEqual(expectedTitle, "Wrong title of page while check that latest products");
+            })
+        });
+
+        it('should click all products', function () {
+            return homePage.clickAllProducts();
+        });
+
     });
 
-    describe("Should check name of device", function () {
+    xdescribe("Should check name of device", function () {
 
         beforeEach(function () {
             this.b = 22222222222;
         });
 
-        it('should click find all devices', function () {
+        it('should click find all devices', async () => {
             console.log("variable a = " + this.a);
             console.log("variable b = " + this.b);
-            return homePage.clickViewAllUSBDrives();
+            await homePage.clickViewAllUSBDrives();
         });
 
-        it('should click first device', function () {
-            return resultPage.clickFirstItem();
+        it('should click first device', async () => {
+            await resultPage.clickFirstItem();
         });
 
-        it('should check name of device', function () {
-            const expNameOfDevice = "SanDisk Ultra Luxe™ USB 3.1 Flash Drive";
-            return expect(usbFlashPage.getNameOfDevice()).toEqual(expNameOfDevice);
+        it('should check name of device', async () => {
+            const expNameOfDevice = "SanDisk Ultra USB Type-C Flash Drive";
+            await expect(usbFlashPage.getNameOfDevice()).toEqual(expNameOfDevice);
         });
+
+        it('should click button add to cart',  () => {
+                return  usbFlashPage.addToCart();
+        });
+
+        it('should click button view cart', async () => {
+           return usbFlashPage.clickViewCart();
+        });
+
+        it('should check that amount of items is 1', async () => {
+            let expectedAmountOfItems = 1;
+            return usbFlashPage.getAmountOfItemsInCart()
+                .then((currentAmount) => {
+                    expect(currentAmount).toEqual(expectedAmountOfItems.toString(), "The amount of items in cart is not as expected");
+                })
+        });
+
 
     })
 });

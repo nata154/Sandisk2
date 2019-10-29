@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cb35191-d123-48c5-bef2-38cac04e9dbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../jasmine/test/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/combined.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jasmine/test/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jasmine/test/pageObject/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/pageObject/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jasmine/test/pageObject/ResultPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/pageObject/ResultPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jasmine/test/pageObject/UsbFlashPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/pageObject/UsbFlashPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jasmine/test/spec/spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/../jasmine/test/spec/spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +43,8 @@
       <updated>1572004284060</updated>
       <workItem from="1572004285385" duration="7866000" />
       <workItem from="1572243273626" duration="5876000" />
-      <workItem from="1572264735394" duration="1103000" />
+      <workItem from="1572264735394" duration="1104000" />
+      <workItem from="1572329482676" duration="56000" />
     </task>
     <servers />
   </component>

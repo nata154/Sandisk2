@@ -15,10 +15,29 @@ class HomePage extends BasePage {
       this.tabTemplate = '//div[@id="bs-example-navbar-collapse-1"]//a[contains(text(), "{0}")]';
       this.sectionTemplate = '//h5[@class="mb-0" and contains(text(), "{0}")]';
       this.vievAllUsbDrives = element(by.xpath('//*[contains(text(), "View All USB Drives")]'));
+      this.shopTab = element(by.css('#productStore'));
+      this.latestProductsBut = element(by.xpath('//a[contains(text(), "Latest Products ")]'));
+      this.allProductsBut = element(by.css('a[class="nav-link flex-1 hover:font-medium ng-binding"]'));
+   }
 
+   async moveToItem(){
+      browser.actions().mouseMove(this.shopTab);
+      console.log("Hovered to item shop");
+      await this.shopTab.click();
+   }
+
+   async clickLatestProducts(){
+      browser.actions().mouseMove(this.latestProductsBut);
+      console.log("Hovered to item latest products");
+      await this.latestProductsBut.click();
+   }
+
+   async clickAllProducts(){
+      await this.allProductsBut.click();
    }
 
    async getPageTitle(){
+      browser.sleep(10000);
       return browser.getTitle();
    }
 

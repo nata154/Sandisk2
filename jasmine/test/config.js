@@ -7,7 +7,7 @@ const yargs = require('yargs').argv;
 const logger = require('./loggerConfig.js').logger;
 
 exports.config = {
-    //seleniumAddress: 'http://localhost:4444/wd/hub',
+    seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['./spec/*.js'],
     framework: 'jasmine',
     ignoreUncaughtExceptions: true,
