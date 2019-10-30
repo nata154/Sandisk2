@@ -2,6 +2,7 @@ const BasePage = require('./BasePage');
 const format = require('string-format');
 const Wrapper = require('../helper/Wrapper');
 const Scroller = require('../helper/Scroller');
+const {by, ExpectedConditions} = require('protractor');
 
 class HomePage extends BasePage {
 
@@ -18,37 +19,60 @@ class HomePage extends BasePage {
       this.shopTab = element(by.css('#productStore'));
       this.latestProductsBut = element(by.xpath('//a[contains(text(), "Latest Products ")]'));
       this.allProductsBut = element(by.css('a[class="nav-link flex-1 hover:font-medium ng-binding"]'));
+      this.allBrands = element(by.css('div.block.px-10.py-3.font-medium'));
+      this.assessories = element(by.css('a[aria-label="Accessories"]'));
+      this.assessoriesTitle = element(by.css('div.flex.items-center h1'));
    }
 
-   async moveToItem(){
-      browser.actions().mouseMove(this.shopTab);
-      console.log("Hovered to item shop");
-      await this.shopTab.click();
+   clickAllBrands(){
+       // Wrapper.waitForElementVisible(this.allBrands)
+       //     .then(() => {
+               return this.allBrands.click();
+           // })
    }
 
-   async clickLatestProducts(){
-      browser.actions().mouseMove(this.latestProductsBut);
-      console.log("Hovered to item latest products");
-      await this.latestProductsBut.click();
+   clickAssessories(){
+               return this.assessories.click();
    }
 
-   async clickAllProducts(){
-      await this.allProductsBut.click();
+   getAssesoriesTitle(){
+       // return Wrapper.waitForElementVisible(this.assessoriesTitle)
+       //     .then( () => {
+               return this.assessoriesTitle.getText();
+           // })
    }
 
-   async getPageTitle(){
-      browser.sleep(10000);
-      return browser.getTitle();
-   }
+    moveToShop(){
+        browser.actions().mouseMove(this.shopTab);
+        return this.shopTab.click();
+    }
 
-   async checkPageTitle(expectedTitle) {
-      return this.getPageTitle().then((title) => {
-         return title === expectedTitle;
-      });
-   }
+    clickLatestProducts(){
+        browser.actions().mouseMove(this.latestProductsBut);
+        // Wrapper.waitForElementClickable(this.latestProductsBut)
+        //     .then(async () =>{
+                return this.latestProductsBut.click();
+            // })
+    }
+
+    clickAllProducts(){
+        Wrapper.waitForElementClickable(this.allProductsBut)
+            .then(async () => {
+                await this.allProductsBut.click();
+            })
+    }
+
+    getPageTitle(){
+        return browser.getTitle();
+    }
+
+    async checkPageTitle(expectedTitle) {
+        return this.getPageTitle().then((title) => {
+            return title === expectedTitle;
+        });
+    }
 
    async findSection(sectionName) {
-      browser.sleep(1000);
       const sectionLocator = element(by.xpath(format(this.sectionTemplate, sectionName)));
       await Scroller.scroll(sectionLocator);
       await Wrapper.waitForElementVisible(sectionLocator)
@@ -58,7 +82,6 @@ class HomePage extends BasePage {
    }
 
    async clickViewAllUSBDrives() {
-      browser.sleep(1000);
       await Scroller.scroll(this.vievAllUsbDrives);
       await Wrapper.waitForElementVisible(this.vievAllUsbDrives)
           .then( async () => {
