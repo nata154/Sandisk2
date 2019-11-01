@@ -1,6 +1,5 @@
 "use strict";
-const { After, Status } = require('cucumber');
-
+const {Before, BeforeAll, After, Status} = require('cucumber');
 // After(function (testCase) {
 //     if (testCase.result.status === Status.FAILED) {
 //         return browser.takeScreenshot().then((screenShot) => {

@@ -1,107 +1,99 @@
 const BasePage = require('./BasePage');
 const format = require('string-format');
-const Wrapper = require('../helper/Wrapper');
-const Scroller = require('../helper/Scroller');
+const Wrapper = require('./../helper/Wrapper');
+const Scroller = require('./../helper/Scroller');
+const { by, ExpectedConditions } = require('protractor');
 
 class HomePage extends BasePage {
 
-   constructor() {
-      super();
-      this.usbFlashTab = element(by.css('div#bs-example-navbar-collapse-1 a[href *= "usb-flash"]'));
-      this.searchBox = element(by.css('form.search-container #search-box'));
-      this.searchInput = element(by.css('form.search-container #search-box'));//cant find"
-      this.radioButtonTemplate = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//preceding-sibling::input';
-      this.radioButtonTemplateH4 = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//..//..//../h4';
-      this.tabTemplate = '//div[@id="bs-example-navbar-collapse-1"]//a[contains(text(), "{0}")]';
+    constructor() {
+        super();
+        this.usbFlashTab = element(by.css('div#bs-example-navbar-collapse-1 a[href *= "usb-flash"]'));
+        this.searchBox = element(by.css('form.search-container #search-box'));
+        this.searchInput = element(by.css('form.search-container #search-box'));//cant find"
+        this.radioButtonTemplate = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//preceding-sibling::input';
+        this.radioButtonTemplateH4 = '//input[@type="radio"]//following::span[contains(text(), "{0}")]//..//..//../h4';
+        this.tabTemplate = '//div[@id="bs-example-navbar-collapse-1"]//a[contains(text(), "{0}")]';
+        this.sectionTemplate = '//h5[@class="mb-0" and contains(text(), "{0}")]';
+        this.vievAllUsbDrives = element(by.xpath('//*[contains(text(), "View All USB Drives")]'));
+        this.shopTab = element(by.css('#productStore'));
+        this.latestProductsBut = element(by.xpath('//a[contains(text(), "Latest Products ")]'));
+        this.allProductsBut = element(by.css('a[class="nav-link flex-1 hover:font-medium ng-binding"]'));
+        this.allBrands = element(by.css('div.block.px-10.py-3.font-medium'));
+        this.assessories = element(by.css('a[aria-label="Accessories"]'));
+        this.assessoriesTitle = element(by.css('div.flex.items-center h1'));
+        this.languageButton = element(by.xpath('//img[@title="United States"]/../..'));  //by.css('img[title="United States"]')
+        this.menuShopExploreSupportTempate = '//ul[@class="list-reset middleMenu"]/li[contains(text(), "{0}")]';
+    }
 
-      //div[@id="bs-example-navbar-collapse-1"]//a[contains(text(), "Where To Buy")]
-   }
+    clickButtonLanguage() {
+        return this.languageButton.click();
+    }
 
-   clickUSBFlaskTab() {
-      return Wrapper.waitForElementClickableAndClick(this.usbFlashTab);
-   }
+    checkPresenceShopExploreSupport(searchItem) {
+        const menuShopExploreSupport = element(by.xpath(format(this.menuShopExploreSupportTempate, searchItem)));
+        return Wrapper.waitForElementClickable(menuShopExploreSupport)
+            .then(function () {
+                return menuShopExploreSupport.isDisplayed();
+            })
+    }
 
-   async clickFilter(filterName) {
-      browser.sleep(2000);
-      const filterLocator = element(by.xpath(format(this.radioButtonTemplate, filterName)));
-     // const filterLocatorH4 = element(by.xpath(format(this.radioButtonTemplateH4, filterName)));
-      await Scroller.scroll(filterLocator);
-      browser.sleep(3000);
-      await Wrapper.waitForElementVisible(filterLocator)
-          .then(async () => {
-             await filterLocator.click();
-          });
-   }
+    clickAllBrands() {
+        return this.allBrands.click();
+    }
 
-   async clickTab(tabName) {
-      browser.sleep(2000);
-      const tabLocator = element(by.xpath(format(this.tabTemplate, tabName)));
-      //const filterLocatorH4 = element(by.xpath(format(this.tabTemplate, tabName)));
-      await Scroller.scroll(tabLocator);
-      await Wrapper.waitForElementVisible(tabLocator)
-          .then(async () => {
-             await tabLocator.click();
-          });
-   }
+    clickAssessories() {
+        return this.assessories.click();
+    }
 
-   // async clickFilter(filterName) {
-   //    console.log("function clickFilter");
-   //    const filterLocator = element(by.xpath(format(this.buttonTemplate, filterName)));
-   //    await this.scroll(this.buttonTemplate)
-   //        .then(async () => {
-   //           await Wrapper.waitForElementClickable(filterLocator)
-   //               .then(async () => {
-   //                  console.log("click" + filterLocator);
-   //                  await filterLocator.click();
-   //               });
-   //        })
-   // }
+    getAssesoriesTitle() {
+        return this.assessoriesTitle.getText();
+    }
 
-   // async scroll(searchElement) {
-   //    await browser.executeScript("arguments[0].scrollIntoView();", searchElement);
-   // }
+    moveToShop() {
+        browser.actions().mouseMove(this.shopTab);
+        return this.shopTab.click();
+    }
 
-   // performSearch(searchTerm) {
-   //    return this.searchBox.click()
-   //        .then(() => {
-   //           return sendKeys(searchTerm)
-   //        })
-   //        .then(function () {
-   //           return require('./ResultPage')
-   //        });
-   // }
+    clickLatestProducts() {
+        browser.actions().mouseMove(this.latestProductsBut);
+        return this.latestProductsBut.click();
+    }
 
-   // clickFilterByUsb() {
-   //    return element(by.xpath(format(this.buttonTemplate, "USB"))).click()
-   //    // return this.rbUsb.click();
-   // }
-   //
-   // clickFilterByWireless() {
-   //    this.scroll(this.rbrbWireless)
-   //       .then(function () {
-   //          return this.rbWireless.click();
-   //       }).then(function () {
-   //          return require('../pageObject/ResultPage')
-   //       });
-   // }
+    clickAllProducts() {
+        Wrapper.waitForElementClickable(this.allProductsBut)
+            .then(async () => {
+                await this.allProductsBut.click();
+            })
+    }
 
-   //performSearch(searchTerm) {
-   // let promise = this.searchBox.click();
-   // promise.then(function () {
-   //   return this.searchInput.sendKeys(searchTerm)
-   // });
+    getPageTitle() {
+        return browser.getTitle();
+    }
 
-   // }
+    async checkPageTitle(expectedTitle) {
+        return this.getPageTitle().then((title) => {
+            return title === expectedTitle;
+        });
+    }
 
-   //performSearch(searchTerm) {
-   //   return this.searchBox.click()
-   //      .then(function () {
-   //         return this.searchInput.sendKeys(searchTerm);
-   //       })
-   //      .then(function () {
-   //return require('./ResultPage')
-   //    });
-   //}
+    async findSection(sectionName) {
+        const sectionLocator = element(by.xpath(format(this.sectionTemplate, sectionName)));
+        await Scroller.scroll(sectionLocator);
+        await Wrapper.waitForElementVisible(sectionLocator)
+            .then(async () => {
+                await sectionLocator.click();
+            });
+    }
+
+    async clickViewAllUSBDrives() {
+        await Scroller.scroll(this.vievAllUsbDrives);
+        await Wrapper.waitForElementVisible(this.vievAllUsbDrives)
+            .then(async () => {
+                await this.vievAllUsbDrives.click();
+            });
+    }
+
 };
 
-module.exports = new HomePage();
+module.exports = HomePage;

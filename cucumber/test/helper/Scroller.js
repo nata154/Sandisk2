@@ -6,6 +6,10 @@ class Scroller {
         await browser.executeScript("arguments[0].scrollIntoView(false);", searchElement);
     }
 
+    async scrollTop(searchElement) {
+        await browser.executeScript("arguments[0].scrollIntoView();", searchElement);
+    }
+
     async scroll2(searchElement1, searchElement2) {
         try {
             (searchElement1).isDisplayed().then(displ => {

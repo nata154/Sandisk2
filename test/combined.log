@@ -1523,3 +1523,5 @@
 {"message":"I open https://www.sandisk.com/ url","level":"info"}
 {"level":"info","message":"I click ${tabName} tab  at homePage"}
 {"level":"info","message":"I click filter "}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}

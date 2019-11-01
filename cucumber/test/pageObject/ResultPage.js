@@ -1,31 +1,26 @@
 const BasePage = require('./BasePage');
 const format = require('string-format');
-const Wrapper = require('../helper/Wrapper');
-const Scroller = require('../helper/Scroller');
+const Wrapper = require('./../helper/Wrapper');
+const Scroller = require('./../helper/Scroller');
 
 class ResultPage extends BasePage {
 
-   constructor() {
-      super();
-       this.firstItemLearnMore = element(by.xpath('//div[@class="search-result"]/div/a[contains(text(), "Learn More")]'));
-       this.itemTemplate = '//div[@class="search-result"]/div/a[contains(text(), "Learn More")]';
-   }
-
-    async clickFirstItem() {
-        await Wrapper.waitForElementClickableAndClick(this.firstItemLearnMore)
+    constructor() {
+        super();
+        this.firstItem = element(by.xpath('//*[contains(text(), "Starting at")]'));
+        this.titleOfFirstItem = element(by.css('h1.inline'));
     }
 
+    async clickFirstItem() {
+        await Wrapper.waitForElementClickableAndClick(this.firstItem)
+    };
 
-    // async clickDefiniteItem(numberOfItem) {
-    //     browser.sleep(3000);
-    //     const filterItem = element(by.xpath(format(this.itemTemplate, numberOfItem)));
-    //     await Scroller.scroll(filterItem);
-    //     browser.sleep(3000);
-    //     await Wrapper.waitForElementVisible(filterItem)
-    //         .then(async () => {
-    //             await filterItem.click();
-    //         });
-    // }
+    getFirstItemTitle() {
+        return Wrapper.waitForElementVisible(this.titleOfFirstItem)
+            .then(() => {
+                return this.titleOfFirstItem.getText();
+            })
+    };
 
 };
 

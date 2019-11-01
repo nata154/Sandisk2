@@ -5,6 +5,7 @@ const yargs = require('yargs').argv;
 const logger = require('./loggerConfig.js').logger;
 
 exports.config = {
+    seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: [path.resolve('./features/*.feature')],
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
@@ -23,7 +24,7 @@ exports.config = {
         ],
         ignoreUncaughtExceptions: true,
         format: 'json:./reports/report.json',
-        tags: yargs.tag || '@SSD-portable-highPerform-whereToBy-InEuropeBelarus'
+        tags: yargs.tag || '@language'
     },
     onPrepare: () => {
         logger.info('Maximizing browser window');

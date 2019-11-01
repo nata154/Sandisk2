@@ -6,25 +6,21 @@
     "id": "playing",
     "tags": [
       {
-        "name": "@all",
+        "name": "@language",
         "line": 1
       }
     ],
-    "uri": "features\\sandisk.feature",
+    "uri": "features\\new.feature",
     "elements": [
       {
-        "id": "playing;filter-ssd-portable-highperformance---second-item---where-to-by---region-belarus---amount-of-items",
+        "id": "playing;playing-with-sandisk",
         "keyword": "Scenario",
-        "line": 46,
-        "name": "Filter SSD portable highPerformance - second item - where to by - region Belarus - amount of Items",
+        "line": 19,
+        "name": "Playing with Sandisk",
         "tags": [
           {
-            "name": "@all",
+            "name": "@language",
             "line": 1
-          },
-          {
-            "name": "@SSD-portable-highPerform-whereToBy-InEuropeBelarus",
-            "line": 29
           }
         ],
         "type": "scenario",
@@ -32,124 +28,118 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 31,
+            "line": 5,
             "name": "I open \"https://www.sandisk.com/\" url",
             "match": {
-              "location": "step_definitions\\actionSteps\\browserInteractions.js:6"
+              "location": "step_definitions\\actionSteps\\browserInteractions.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 8370000000
+              "duration": 9421000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 32,
-            "name": "I click \"SSD\" tab at homePage",
+            "line": 6,
+            "name": "I click to 'Change language' button",
             "match": {
-              "location": "step_definitions\\actionSteps\\mouseInteractions.js:30"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 6451000000
+              "duration": 1869000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I expect 'Asia Pacific' region is present for Select Your Region form",
+            "match": {
+              "location": "step_definitions\\validationSteps\\validationSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 673000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I expect 'Europe' region is present for Select Your Region form",
+            "match": {
+              "location": "step_definitions\\validationSteps\\validationSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I expect 'Middle East' region is present for Select Your Region form",
+            "match": {
+              "location": "step_definitions\\validationSteps\\validationSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 33,
-            "name": "I click filter \"Portable SSD\"",
+            "line": 11,
+            "name": "I choose 'Русский' in language options",
             "match": {
-              "location": "step_definitions\\actionSteps\\mouseInteractions.js:20"
+              "location": "step_definitions\\actionSteps\\mouseInteractions.js:31"
             },
             "result": {
               "status": "passed",
-              "duration": 5229000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 34,
-            "name": "I click filter \"High Performance\"",
-            "match": {
-              "location": "step_definitions\\actionSteps\\mouseInteractions.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5233000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 35,
-            "name": "I click first item",
-            "match": {
-              "location": "step_definitions\\actionSteps\\mouseInteractions.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5353000000
+              "duration": 915000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
-            "name": "I check SSDdevice name \"SanDisk Extreme 900 Portable SSD\"",
+            "line": 12,
+            "name": "I expect 'МАГАЗИН' button on page",
             "match": {
-              "location": "step_definitions\\validationSteps\\validationSteps.js:26"
+              "location": "step_definitions\\validationSteps\\validationSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 35000000
+              "duration": 3259000000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 37,
-            "name": "I click \"Where To Buy\" tab at SSDPage",
+            "keyword": "And ",
+            "line": 13,
+            "name": "I expect 'ПОИСК' button on page",
             "match": {
-              "location": "step_definitions\\actionSteps\\mouseInteractions.js:35"
+              "location": "step_definitions\\validationSteps\\validationSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 2180000000
+              "duration": 116000000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 38,
-            "name": "I set region \"Europe / Middle East\"",
+            "keyword": "And ",
+            "line": 14,
+            "name": "I expect 'ПОДДЕРЖКА' button on page",
             "match": {
-              "location": "step_definitions\\actionSteps\\mouseInteractions.js:40"
+              "location": "step_definitions\\validationSteps\\validationSteps.js:22"
             },
             "result": {
-              "status": "failed",
-              "duration": 2000000,
-              "error_message": "TypeError: this.regionTemplate.click is not a function\n    at SSDPage.clickRegion (D:\\Sandisk2\\test\\pageObject\\SSDPage.js:32:35)\n    at CustomWorld.When (D:\\Sandisk2\\test\\step_definitions\\actionSteps\\mouseInteractions.js:42:19)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 39,
-            "name": "I set area \"Belarus\"",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "Amount of distributors should be not null",
-            "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 180000000
             }
           },
           {

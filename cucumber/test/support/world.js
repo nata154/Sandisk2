@@ -1,11 +1,11 @@
-const { setWorldConstructor, defineSupportCode } = require('cucumber');
+const {setWorldConstructor, defineSupportCode} = require('cucumber');
 
 class CustomWorld {
-   constructor() {
-      defineSupportCode(({ setDefaultTimeout }) => {
-          setDefaultTimeout(30 * 1000);
-      })
-   }
+    constructor() {
+        defineSupportCode(({setDefaultTimeout}) => {
+            setDefaultTimeout(40 * 1000);
+        })
+    }
 }
 
 setWorldConstructor(CustomWorld);

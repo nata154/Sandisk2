@@ -1342,3 +1342,327 @@
 {"message":"I click first element","level":"info"}
 {"level":"info","message":"I click ${tabName} tab  at SSDPage"}
 {"level":"info","message":"I set region ${region}"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click filter "}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"level":"info","message":"I click ${tabName} tab  at homePage"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Americas","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Americas","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Americas","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Americas","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Americas","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Americas","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Americas","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"I found such МАГАЗИН button at page","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"I found such МАГАЗИН button at page","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"I found such МАГАЗИН button at page","level":"info"}
+{"message":"I found such ПОИСК button at page","level":"info"}
+{"message":"I found such ПОДДЕРЖКА button at page","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"I found such МАГАЗИН button at page","level":"info"}
+{"message":"I found such ПОИСК button at page","level":"info"}
+{"message":"I found such ПОДДЕРЖКА button at page","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"I found such МАГАЗИН button at page","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"I found such МАГАЗИН button at page","level":"info"}
+{"message":"I found such ПОИСК button at page","level":"info"}
+{"message":"I found such ПОДДЕРЖКА button at page","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"I found such МАГАЗИН button at page","level":"info"}
+{"message":"I found such ПОИСК button at page","level":"info"}
+{"message":"I found such ПОДДЕРЖКА button at page","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"Maximizing browser window","level":"info"}
+{"message":"I open https://www.sandisk.com/ url","level":"info"}
+{"message":"I click button Change language","level":"info"}
+{"message":"I search for Asia Pacific","level":"info"}
+{"message":"I search for Europe","level":"info"}
+{"message":"I search for Middle East","level":"info"}
+{"message":"I choose language Русский","level":"info"}
+{"message":"I found such МАГАЗИН button at page","level":"info"}
+{"message":"I found such ПОИСК button at page","level":"info"}
+{"message":"I found such ПОДДЕРЖКА button at page","level":"info"}

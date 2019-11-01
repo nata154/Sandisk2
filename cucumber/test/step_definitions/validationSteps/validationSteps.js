@@ -1,10 +1,28 @@
 "use strict";
 
-let { Then } = require('cucumber');
+let { Then, Before } = require('cucumber');
 const expect = require('chai').expect;
 const logger = require('./../../loggerConfig.js').logger;
-const UsbFlashPage = require('../../pageObject/UsbFlashPage');
-const SSDPage = require('../../pageObject/SSDPage');
+const BasePage = require('./../../pageObject/BasePage');
+const HomePage = require('./../../pageObject/HomePage');
+const LatestProductPage = require('./../../pageObject/LatestProductsPage');
+const ResultPage = require('./../../pageObject/ResultPage');
+const SSDPage = require('./../../pageObject/SSDPage');
+const UsbFlashPage = require('./../../pageObject/UsbFlashPage');
+const LanguagePage = require('./../../pageObject/LanguagePage');
+
+let homePage = new HomePage();
+let languagePage = new LanguagePage();
+
+Then('I expect {string} region is present for Select Your Region form', async (searchRegion) => {
+    logger.info(`I search for ${searchRegion}`);
+    await languagePage.checkRegionPresence(searchRegion);
+});
+
+Then('I expect {string} button on page', async (searchButton) => {
+    logger.info(`I found such ${searchButton} button at page`);
+    await homePage.checkPresenceShopExploreSupport(searchButton);
+});
 
 Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
     notArg = notArg ? ' not' : '';
@@ -12,8 +30,7 @@ Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
     logger.info(`Page title should${notArg} be ${text}`);
     if (notArg) {
         return expect(pageTitle).to.not.equal(text, `Title is not equal`);
-    }
-    else {
+    } else {
         return expect(pageTitle).to.be.equal(text);
     }
 });

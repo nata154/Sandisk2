@@ -1,9 +1,9 @@
 const BasePage = require('./BasePage');
 const format = require('string-format');
-const Wrapper = require('../helper/Wrapper');
-const Scroller = require('../helper/Scroller');
+const Wrapper = require('./../helper/Wrapper');
+const Scroller = require('./../helper/Scroller');
 
-class SSDPage extends BasePage{
+class SSDPage extends BasePage {
 
     constructor() {
         super();
@@ -13,7 +13,7 @@ class SSDPage extends BasePage{
     }
 
     async clickTab(tabName) {
-        browser.sleep(2000);
+        browser.sleep(1000);
         const tabLocator = element(by.xpath(format(this.tabTemplate, tabName)));
         //const filterLocatorH4 = element(by.xpath(format(this.tabTemplate, tabName)));
         await Scroller.scroll(tabLocator);
@@ -28,7 +28,7 @@ class SSDPage extends BasePage{
         return this.nameOfDevice.getText();
     }
 
-    async clickRegion(region){//TO DO
+    async clickRegion(region) {//TO DO
         await this.regionTemplate.click();
     }
 }
